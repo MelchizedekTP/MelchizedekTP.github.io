@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melchizedek T P — Software Engineer</title>
+  <meta name="description" content="Melchizedek T P — Software Engineer. GenAI, CUDA, NLP and front-end systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader"><span class="loader-text">&lt;MTP /&gt;</span></div>
+  <canvas id="bg"></canvas>
+  <div class="cursor-glow"></div>
+  <div class="progress"></div>
+
+  <nav class="nav">
+    <a href="#home" class="logo">MTP<span>.</span></a>
+    <button class="burger" aria-label="Menu"><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <p class="mono hello">// hello, world. I am</p>
+    <h1 class="glitch" data-text="Melchizedek T P">Melchizedek T P</h1>
+    <h2 class="mono">I build <span id="typed"></span><span class="caret">|</span></h2>
+    <p class="tagline">From CUDA kernels to air-gapped LLM pipelines to pixel-perfect React — I like working at every layer of the stack.</p>
+    <div class="cta">
+      <a href="#projects" class="btn primary magnetic">See my work</a>
+      <a href="https://github.com/MelchizedekTP/" target="_blank" rel="noopener" class="btn ghost magnetic">GitHub ↗</a>
+    </div>
+    <div class="scroll-hint"><span></span></div>
+  </header>
+
+  <main>
+    <section id="about" class="reveal">
+      <h3 class="section-title"><span class="mono">01.</span> About</h3>
+      <div class="about-grid">
+        <p>I'm a Software Engineer pursuing an M.Tech in Computer Science at the <strong>Indian Institute of Science</strong>. Previously a Senior Software Engineer at <strong>LTIMindtree</strong>, I now spend my time on GenAI systems, GPU programming and semantic search.</p>
+        <div class="stats">
+          <div class="stat"><b data-count="20000" data-suffix="+">0</b><span>chunks indexed</span></div>
+          <div class="stat"><b data-count="94.2" data-suffix="%" data-dec="1">0</b><span>semantic accuracy</span></div>
+          <div class="stat"><b data-count="32" data-suffix="B">0</b><span>param LLM, self-hosted</span></div>
+        </div>
+      </div>
+      <div class="marquee"><div class="track">
+        <span>Python</span><span>C++</span><span>CUDA</span><span>React</span><span>Flutter</span><span>Dart</span><span>Flask</span><span>TailwindCSS</span><span>vLLM</span><span>ChromaDB</span><span>PostgreSQL</span><span>Firebase</span><span>Contentful</span><span>Linux</span><span>Azure</span>
+        <span>Python</span><span>C++</span><span>CUDA</span><span>React</span><span>Flutter</span><span>Dart</span><span>Flask</span><span>TailwindCSS</span><span>vLLM</span><span>ChromaDB</span><span>PostgreSQL</span><span>Firebase</span><span>Contentful</span><span>Linux</span><span>Azure</span>
+      </div></div>
+    </section>
+
+    <section id="experience" class="reveal">
+      <h3 class="section-title"><span class="mono">02.</span> Experience</h3>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <span class="mono date">2022 — 2023 · Bangalore</span>
+            <h4>Senior Software Engineer <em>@ LTIMindtree</em></h4>
+            <ul>
+              <li>Led a full-scale front-end migration to React with reusable components, Tailwind CSS and Contentful — faster rendering, better scalability and responsiveness.</li>
+              <li>Audited legacy code with cross-functional teams, defined architecture and ran robust testing cycles for zero-downtime delivery.</li>
+            </ul>
+            <span class="badge">🏅 Team Player badge</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h3 class="section-title"><span class="mono">03.</span> Projects</h3>
+      <div class="cards">
+        <article class="card tilt reveal">
+          <div class="card-icon">⛓</div>
+          <h4>Air-Gapped Formal Requirements Synthesis Engine</h4>
+          <p>Self-hosted Qwen-32B on vLLM translating natural-language engineering specs into FRETish formal requirements, grounded by a local ChromaDB retrieval engine over 20,000+ chunks.</p>
+          <div class="tags"><span>GenAI</span><span>vLLM</span><span>RAG</span><span>ChromaDB</span></div>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-icon">🎬</div>
+          <h4>Semantic Movie Recommendation Engine</h4>
+          <p>Fine-tuned Sentence-Transformer on 5,000+ TMDB profiles producing 384-d embeddings, with KNN cosine search for sub-millisecond top-k retrieval at 94.2% matching accuracy.</p>
+          <div class="tags"><span>NLP</span><span>Embeddings</span><span>KNN</span></div>
+        </article>
+        <article class="card tilt reveal">
+          <div class="card-icon">⚡</div>
+          <h4>Custom IO-Aware Attention Engine</h4>
+          <p>Forward FlashAttention kernel in CUDA with 2D block tiling into SRAM and online softmax — the N×N attention matrix never touches global memory.</p>
+          <div class="tags"><span>CUDA</span><span>FlashAttention</span><span>HPC</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="education" class="reveal">
+      <h3 class="section-title"><span class="mono">04.</span> Education & Certifications</h3>
+      <div class="edu-grid">
+        <div class="edu reveal"><span class="mono date">Present</span><h4>M.Tech, Computer Science</h4><p>Indian Institute of Science</p></div>
+        <div class="edu reveal"><span class="mono date">2022</span><h4>B.Tech, Engineering Physics</h4><p>NIT Calicut</p></div>
+        <div class="edu reveal"><span class="mono date">AISSCE</span><h4>School Topper, Computer Science</h4><p>98 / 100</p></div>
+      </div>
+      <div class="certs reveal">
+        <span>Azure Fundamentals</span><span>Power Platform Fundamentals</span><span>Data Analysis with Python</span><span>DSA with Python</span>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal contact">
+      <h3 class="section-title center"><span class="mono">05.</span> Let's build something</h3>
+      <p>Open to collaborations, research and engineering roles.</p>
+      <a href="https://github.com/MelchizedekTP/" target="_blank" rel="noopener" class="btn primary big magnetic">Say hi on GitHub ↗</a>
+    </section>
+  </main>
+
+  <footer class="mono">Designed & built by Melchizedek T P · <span id="year"></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
